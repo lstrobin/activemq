@@ -189,11 +189,6 @@ class ServiceRun():
                       					        <authorizationEntry topic=">" read="admins,reads,writes,owners" write="admins,writes,owners" admin="admins,owners" />
                       					        <authorizationEntry topic="ActiveMQ.Advisory.>" read="admins,reads,writes,owners" write="admins,reads,writes,owners" admin="admins,reads,writes,owners"/>
                     				        </authorizationEntries>
-
-                    				        <!-- let's assign roles to temporary destinations. comment this entry if we don't want any roles assigned to temp destinations  -->
-                    				        <tempDestinationAuthorizationEntry>
-                      					        <tempDestinationAuthorizationEntry read="tempDestinationAdmins" write="tempDestinationAdmins" admin="tempDestinationAdmins"/>
-                   				            </tempDestinationAuthorizationEntry>
                   			            </authorizationMap>
                 		            </map>
               		             </authorizationPlugin>
